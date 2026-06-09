@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Titulo texto-->
+        <title>Formulario Contacto</title>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/general.css'>
+    </head>
+    <body>
+    <div id="adaptador">
+        <form>
+        <!--Cabecera del formulario-->
+        <h1>Contacto</h1>
+        <!--Aquí estamos definiendo la etiqueta Nombre-->
+        <label for="Nombre">Nombre</label>
+        <!--Aqui estoy definiendo el campo de entrada de texto de una sola línea-->
+        <input type="text" id="Nombre" placeholder="Tu nombre"><br>
+         <!--Aquí estamos definiendo la etiqueta Correo-->
+        <label for="Correo">Correo</label>
+        <!--Aquí estamos definiendo el campo de entrada de correo-->
+        <input type="email" id="Correo" multiple placeholder="uno@dominio.com,otro@a"><br>
+         <!--Aquí estamos definiendo la etiqueta Contraseña-->
+        <label for="Contraseña">Contraseña</label>
+        <!--Aquí estamos definiendo el campo de entrada de la contraseña-->
+        <input type="password" id="Contraseña"><br>
+        <!--Aquí estamos definiendo la etiqueta de fecha-->
+        <label for="Fecha">Fecha</label>
+        <!--Aquí estamos definiendo el campo de entrada de fecha-->
+        <input type="date" id="Fecha" min="01-01-2025" max="01-01-2026"><br>
+        <!--Aquí estamos definiendo la etiqueta de Mes-->
+        <label for="Mes">Mes</label>
+        <!--Aquí estamos definiendo el campo de entrada de mes-->
+        <input type="text" id="Mes"><br>
+        <!--Aquí estamos definiendo la etiqueta de hora-->
+        <label for="Hora">Hora</label>
+        <!--Aquí estamos definiendo el campo de entrada de hora-->
+        <input type="time" id="Hora"><br>
+        <!--Aquí estamos definiendo la etiqueta de cantidad-->
+        <label for="Cantidad">Cantidad</label>
+        <!--Aquí estamos definiendo el campo de entrada de cantidad-->
+        <input type="number" id="Cantidad" min="1" max="10" placeholder="1"><br>
+        <!--Aquí estamos agrupando datos en el formulario con fieldset-->
+        <fieldset>
+            <!--Aquí estamos dando un titulo para los elementos del fieldset-->
+            <legend>Preferencias</legend>
+            <!--Aquí estamos definiendo la etiqueta de Opción A-->
+            <label for="Opción A">Opción A</label>
+            <!--Aquí estamos definiendo el campo de entrada de Opción A-->
+            <input type="radio" id="Opción A" value="OpciónA" name="opciones">
+            <!--Aquí estamos definiendo la etiqueta de Opción B-->
+            <label for="Opción B">Opción B</label>
+            <!--Aquí estamos definiendo el campo de entrada de Opción B-->
+            <input type="radio" id="Opción B" value="Opción B" name="opciones">
+            <!--Aquí estamos definiendo la etiqueta de Acepto condiciones-->
+            <label for="Acepto condiciones">Acepto condiciones</label>
+            <!--Aquí estamos definiendo el campo de entrada de Acepto condiciones-->
+            <input type="checkbox" id="Acepto condiciones" value="Acepto condiciones">
+            <!--Aquí ha terminado la agrupación de datos en el formulario con fieldset-->
+        </fieldset>
+        <!--Aquí estamos definiendo la etiqueta de código-->
+        <label for="Código">Código (4 dígitos y 3 letras mayúsculas)</label>
+        <!--Aquí estamos definiendo el campo de entrada de código-->
+        <input type="text" pattern="(\d{4}[A-Z]{3})" id="Código" size="7" placeholder="0000AAA"><br>
+         <!--Aquí estamos definiendo la etiqueta de Solo lectura-->
+        <label for="Solo-lectura">Solo lectura</label>
+        <!--Aquí estamos definiendo el campo de entrada solo de lectura-->
+        <input type="text" id="Solo-lectura" readonly placeholder="No editable"><br>
+        <!--Aquí estamos definiendo el campo de entrada deshabilitada-->
+        <label for="Deshabilitado">Deshabilitado</label>
+        <!--Aquí estamos definiendo el campo de entrada de no se envía-->
+        <input type="text" id="Deshabilitado" disabled placeholder="No se envía"><br>
+        <!--Aquí estamos definiendo el campo de reset -->
+        <input type="submit" value="Enviar" id="Enviar"><input type="reset" value="Restablecer" id="Restablecer""> 
+        </form>
+    </div>
+    </body>
